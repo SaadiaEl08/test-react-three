@@ -5,8 +5,8 @@ function RotatingDodecahedron() {
     const meshRef = useRef();
     useFrame(() => {
       if (meshRef.current) {
-        meshRef.current.rotation.x += 0.001;
-        meshRef.current.rotation.y += 0.001;
+        meshRef.current.rotation.x += 0.01;
+        meshRef.current.rotation.y += 0.01;
       }
     });
     return (
